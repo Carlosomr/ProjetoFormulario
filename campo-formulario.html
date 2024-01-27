@@ -17,7 +17,7 @@
             <p>O primeiro passo, é preencher esse
                 formulário de inscrição.</p>
         </header>
-        <form>
+        <form id="my-form">
         <fieldset>
             <div class="fieldset-wrapper">
                 <legend>Informações do Evento</legend>
@@ -54,8 +54,56 @@
             </div>
            
         </fieldset>
-        </form>
-    </div>
+        <fieldset>
+            <div class="fieldset-wrapper">
+                <legend>Privacidade</legend>
+                <div class="input-wrapper">
+                    <label for="event-email">E-mail do administrador <span>(digite um e-mail válido)</span></label>
+                    <input type="email" id="event-email">
+                </div>
 
+                <div class="input-wrapper">
+                    <label for="event-title">Título do evento <span>(mínimo 8 caracteres)</span></label>
+                    <input type="text" id="event-title">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-password">Senha de acesso para os participantes <span>(mínimo 8 caracteres)</span></label>
+                    <input type="password" id="event-password">
+                </div>
+            </div>
+
+        
+        </fieldset>
+
+        <fieldset>
+            <div class="fieldset-wrapper">
+                <legend>Dia e hora</legend>
+            <div class="col-3">
+                
+                <div class="input-wrapper">
+                    <label for="event-data">Data</label>
+                    <input type="date" id="event-data">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-begin">Das</span></label>
+                    <input type="time" id="event-begin">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="event-password">Até</span></label>
+                    <input type="time" id="event-password">
+                </div>
+
+            </div>
+        </div>
+        </fieldset>
+            </form>
+        <footer>
+            <input form="my-form" class="button" type="submit" value="Salvar evento">
+        </footer>
+    </div>
+   
 </body>
 </html>
